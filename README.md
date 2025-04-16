@@ -20,8 +20,8 @@ Este é um projeto de um site de portfólio responsivo, desenvolvido com HTML, C
 - **CSS3**: Estilização e responsividade.
   - Uso de variáveis CSS para cores.
   - Gradientes e transições para efeitos visuais.
-  - Grid e Flexbox para layout responsivo.
-- **JavaScript** (se aplicável): Validação de formulários e interatividade.
+  - Flexbox para layout responsivo.
+- **JavaScript** : Para Funcionalidade do menu para dispositivos moveis.
 
 ## Destaques de Estilo
 
