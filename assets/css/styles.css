@@ -31,7 +31,7 @@ body {
 header {
     background: linear-gradient(135deg, #6e48aa 0%, #9d50bb 100%);
     color: white;
-    padding: 1.5rem 2rem;
+    padding: 0.3rem 2rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -53,6 +53,13 @@ header h1 {
 nav ul {
     display: flex;
     list-style: none;
+    gap: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1.5rem;
 }
 
@@ -82,6 +89,23 @@ nav a::after {
 
 nav a:hover::after {
     width: 100%;
+}
+
+/* Menu Hamburguer */
+#menu {
+    display: none;
+}
+
+#menu i {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+#menu:hover {
+    color: #f1c40f;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 
 /* Container */
@@ -133,12 +157,12 @@ div#sobre {
 
     padding-bottom: 5rem;
     background: transparent;
-    border:none;
+    border: none;
 }
 
-#sobre:hover{
+#sobre:hover {
     background: none !important;
-    border:none !important;
+    border: none !important;
     box-shadow: none !important;
     transform: none !important;
     transition: none !important;
@@ -210,7 +234,8 @@ table {
     margin-top: 1rem;
 }
 
-th, td {
+th,
+td {
     padding: 12px 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
@@ -259,14 +284,14 @@ tr:hover {
 }
 
 /* Seção de Contato */
-#contato{
+#contato {
     max-width: 1130px;
     margin: 2rem auto;
-    padding:  2rem;
+    padding: 2rem;
 }
 
 .contact-form {
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 1.5rem;
     margin-bottom: 2rem;
@@ -314,14 +339,15 @@ tr:hover {
 
 .btn-submit:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(110, 72, 170, 0.4);
+    box-shadow: 0 5px 5px rgba(110, 72, 170, 0.4);
+    opacity: 0.9;
 }
 
 input[type="radio"] {
     accent-color: #6e48aa;
 }
 
-select{
+select {
     padding: 0.8rem 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -329,7 +355,7 @@ select{
     transition: all 0.3s ease;
 }
 
-select > option{
+select>option {
     background-color: #6e48aa90;
     color: #000;
 }
@@ -388,10 +414,15 @@ footer ul {
     margin-top: 1rem;
 }
 
+footer ul li i {
+    padding: 5px 5px;
+}
+
 footer ul li a {
     color: white;
     font-size: 1.2rem;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 footer ul li a:hover {
@@ -405,9 +436,14 @@ footer ul li a:hover {
         text-align: center;
     }
 
+    nav {
+        display: none;
+    }
+
     nav ul {
         justify-content: center;
         flex-wrap: wrap;
+
     }
 
     .container {
@@ -420,5 +456,16 @@ footer ul li a:hover {
 
     .contact-form {
         grid-template-columns: 1fr;
+    }
+
+
+    #menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    #menu i {
+        font-size: 1.5rem;
+        color: white;
     }
 }

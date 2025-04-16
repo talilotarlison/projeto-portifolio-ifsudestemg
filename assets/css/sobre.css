@@ -64,16 +64,17 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-#sobre .timeline-title{
+#sobre .timeline-title {
     color: #6e48aa;
     margin-bottom: 1rem;
     display: flex;
     align-items: start;
     width: 100%;
-    margin-left:10rem;
+    margin-left: 10rem;
 
 }
-.timeline-content h3{
+
+.timeline-content h3 {
     color: #6e48aa;
     margin-bottom: 0.5rem;
 }
@@ -123,8 +124,9 @@
     .timeline-content::before {
         left: -27px;
     }
-    #sobre .timeline-title{
 
-        margin-left:0.1rem;
+    #sobre .timeline-title {
+
+        margin-left: 0.1rem;
     }
 }
