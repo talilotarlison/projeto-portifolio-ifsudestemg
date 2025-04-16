@@ -1,0 +1,130 @@
+/* Minha História - Timeline */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: linear-gradient(to bottom, #6e48aa, #9d50bb);
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    border-radius: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.timeline-date {
+    position: absolute;
+    left: -50px;
+    width: 100px;
+    padding: 0.5rem;
+    background: #6e48aa;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 500;
+    box-shadow: 0 3px 10px rgba(110, 72, 170, 0.3);
+    z-index: 1;
+}
+
+.timeline-content {
+    position: relative;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin-left: 30px;
+    transition: all 0.3s ease;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #6e48aa;
+    border-radius: 50%;
+    left: -68px;
+    top: 80px;
+    border: 3px solid white;
+    box-shadow: 0 0 0 4px #6e48aa;
+}
+
+.timeline-content:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+#sobre .timeline-title{
+    color: #6e48aa;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: start;
+    width: 100%;
+    margin-left:10rem;
+
+}
+.timeline-content h3{
+    color: #6e48aa;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.timeline-content li {
+    margin-bottom: 0.3rem;
+    position: relative;
+}
+
+.timeline-content li::before {
+    content: '•';
+    color: #9d50bb;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 30px;
+    }
+
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-date {
+        left: -30px;
+        width: 80px;
+        font-size: 0.8rem;
+    }
+
+    .timeline-content {
+        margin-left: 20px;
+    }
+
+    .timeline-content::before {
+        left: -27px;
+    }
+    #sobre .timeline-title{
+
+        margin-left:0.1rem;
+    }
+}
