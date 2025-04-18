@@ -1,5 +1,5 @@
 
-# Projeto Web do Curso Desenvolvimento de Sistema do IFsuldesteMG - Portfolio 
+# Projeto Web do Curso Desenvolvimento de Sistema do IFsudesteMG - Portfolio 
 
 Este é um projeto de um site de portfólio responsivo, desenvolvido com HTML, CSS e JavaScript. O objetivo é apresentar informações pessoais, projetos, habilidades e formas de contato de maneira visualmente atraente e funcional.
 
